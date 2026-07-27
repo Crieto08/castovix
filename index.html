@@ -932,6 +932,73 @@
 </div>
 
 <script>
+  const castPool = [
+    'https://images.pexels.com/photos/32809021/pexels-photo-32809021.jpeg',
+    'https://images.pexels.com/photos/4021994/pexels-photo-4021994.jpeg',
+    'https://images.pexels.com/photos/35446863/pexels-photo-35446863.jpeg',
+    'https://images.pexels.com/photos/36388454/pexels-photo-36388454.jpeg',
+    'https://images.pexels.com/photos/28935581/pexels-photo-28935581.jpeg',
+    'https://images.pexels.com/photos/31071253/pexels-photo-31071253.jpeg',
+    'https://images.pexels.com/photos/17086288/pexels-photo-17086288.jpeg',
+    'https://images.pexels.com/photos/6068717/pexels-photo-6068717.jpeg',
+    'https://images.pexels.com/photos/34353697/pexels-photo-34353697.jpeg',
+    'https://images.pexels.com/photos/37630733/pexels-photo-37630733.jpeg',
+    'https://images.pexels.com/photos/25706382/pexels-photo-25706382.jpeg',
+    'https://images.pexels.com/photos/338027/pexels-photo-338027.jpeg',
+    'https://images.pexels.com/photos/34159010/pexels-photo-34159010.jpeg',
+    'https://images.pexels.com/photos/30408335/pexels-photo-30408335.jpeg',
+    'https://images.pexels.com/photos/17057406/pexels-photo-17057406.jpeg',
+    'https://images.pexels.com/photos/3341067/pexels-photo-3341067.jpeg',
+    'https://images.pexels.com/photos/33554551/pexels-photo-33554551.jpeg',
+    'https://images.pexels.com/photos/27304295/pexels-photo-27304295.jpeg',
+    'https://images.pexels.com/photos/12329780/pexels-photo-12329780.jpeg',
+    'https://images.pexels.com/photos/16637678/pexels-photo-16637678.jpeg',
+    'https://images.pexels.com/photos/13663775/pexels-photo-13663775.jpeg',
+    'https://images.pexels.com/photos/13989981/pexels-photo-13989981.jpeg',
+    'https://images.pexels.com/photos/35228372/pexels-photo-35228372.jpeg',
+    'https://images.pexels.com/photos/7405059/pexels-photo-7405059.jpeg',
+    'https://images.pexels.com/photos/14841129/pexels-photo-14841129.jpeg',
+    'https://images.pexels.com/photos/29870245/pexels-photo-29870245.jpeg',
+    'https://images.pexels.com/photos/18328707/pexels-photo-18328707.jpeg',
+    'https://images.pexels.com/photos/36354489/pexels-photo-36354489.jpeg',
+    'https://images.pexels.com/photos/14011664/pexels-photo-14011664.jpeg',
+    'https://images.pexels.com/photos/12387992/pexels-photo-12387992.jpeg',
+    'https://images.pexels.com/photos/16104977/pexels-photo-16104977.jpeg',
+    'https://images.pexels.com/photos/3460599/pexels-photo-3460599.jpeg',
+    'https://images.pexels.com/photos/1861153/pexels-photo-1861153.jpeg',
+    'https://images.pexels.com/photos/34607320/pexels-photo-34607320.jpeg',
+    'https://images.pexels.com/photos/8920389/pexels-photo-8920389.jpeg',
+    'https://images.pexels.com/photos/36729751/pexels-photo-36729751.jpeg',
+    'https://images.pexels.com/photos/13306125/pexels-photo-13306125.jpeg',
+    'https://images.pexels.com/photos/11439083/pexels-photo-11439083.jpeg',
+    'https://images.pexels.com/photos/6764299/pexels-photo-6764299.jpeg',
+    'https://images.pexels.com/photos/7858828/pexels-photo-7858828.jpeg',
+    'https://images.pexels.com/photos/30734753/pexels-photo-30734753.jpeg',
+    'https://images.pexels.com/photos/19242076/pexels-photo-19242076.jpeg',
+    'https://images.pexels.com/photos/35099850/pexels-photo-35099850.jpeg',
+    'https://images.pexels.com/photos/10621020/pexels-photo-10621020.jpeg',
+    'https://images.pexels.com/photos/20418621/pexels-photo-20418621.jpeg',
+    'https://images.pexels.com/photos/11713857/pexels-photo-11713857.jpeg',
+    'https://images.pexels.com/photos/4853261/pexels-photo-4853261.jpeg',
+    'https://images.pexels.com/photos/8933584/pexels-photo-8933584.jpeg',
+    'https://images.pexels.com/photos/13106614/pexels-photo-13106614.jpeg',
+    'https://images.pexels.com/photos/3984353/pexels-photo-3984353.jpeg'
+  ];
+  function shuffleCastPool(arr){
+    const a = arr.slice();
+    for(let i=a.length-1;i>0;i--){
+      const j = Math.floor(Math.random()*(i+1));
+      [a[i],a[j]] = [a[j],a[i]];
+    }
+    return a;
+  }
+  const chosenImages = shuffleCastPool(castPool).slice(0,12);
+  document.querySelectorAll('.cast-grid .frame img').forEach((img,i) => {
+    if(chosenImages[i]) img.src = chosenImages[i] + '?auto=compress&cs=tinysrgb&w=400';
+  });
+</script>
+
+<script>
   const burger = document.getElementById('navBurger');
   const drawer = document.getElementById('mobileDrawer');
   burger.addEventListener('click', () => {
