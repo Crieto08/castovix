@@ -195,15 +195,12 @@
     mask-image:linear-gradient(to right, transparent, black 6%, black 94%, transparent);
   }
   .ticker-track{
-    display:flex;
-    width:200%;
-    animation:scroll 28s linear infinite;
+    display:inline-flex;
+    animation:scroll 84s linear infinite;
   }
   .ticker-set{
-    display:flex;
-    width:50%;
+    display:inline-flex;
     flex-shrink:0;
-    justify-content:space-around;
   }
   .ticker-track span{
     font-family:'JetBrains Mono', monospace;
@@ -219,6 +216,9 @@
   }
   .ticker-track span b{ color:var(--teal); }
   .ticker-track span::before{ content:'●'; font-size:6px; color:var(--amber); flex-shrink:0; }
+  @media (max-width:640px){
+    .ticker-track span{ font-size:11.5px; padding:0 20px; gap:8px; }
+  }
   @keyframes scroll{
     0%{ transform:translateX(0); }
     100%{ transform:translateX(-50%); }
@@ -622,8 +622,28 @@
         <span>NINCS HOSSZÚ TÁVÚ SZERZŐDÉS</span>
         <span><b>48 ÓRA</b> ALATT MINTA</span>
         <span>AI + EMBERI KONTROLL</span>
+        <span><b>24</b> TARTALOM HAVONTA</span>
+        <span>NINCS ALKALMAZÁS</span>
+        <span>NINCS HOSSZÚ TÁVÚ SZERZŐDÉS</span>
+        <span><b>48 ÓRA</b> ALATT MINTA</span>
+        <span>AI + EMBERI KONTROLL</span>
+        <span><b>24</b> TARTALOM HAVONTA</span>
+        <span>NINCS ALKALMAZÁS</span>
+        <span>NINCS HOSSZÚ TÁVÚ SZERZŐDÉS</span>
+        <span><b>48 ÓRA</b> ALATT MINTA</span>
+        <span>AI + EMBERI KONTROLL</span>
       </div>
       <div class="ticker-set">
+        <span><b>24</b> TARTALOM HAVONTA</span>
+        <span>NINCS ALKALMAZÁS</span>
+        <span>NINCS HOSSZÚ TÁVÚ SZERZŐDÉS</span>
+        <span><b>48 ÓRA</b> ALATT MINTA</span>
+        <span>AI + EMBERI KONTROLL</span>
+        <span><b>24</b> TARTALOM HAVONTA</span>
+        <span>NINCS ALKALMAZÁS</span>
+        <span>NINCS HOSSZÚ TÁVÚ SZERZŐDÉS</span>
+        <span><b>48 ÓRA</b> ALATT MINTA</span>
+        <span>AI + EMBERI KONTROLL</span>
         <span><b>24</b> TARTALOM HAVONTA</span>
         <span>NINCS ALKALMAZÁS</span>
         <span>NINCS HOSSZÚ TÁVÚ SZERZŐDÉS</span>
