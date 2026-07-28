@@ -630,6 +630,42 @@
   .plan.custom .plan-btn:hover{ background:var(--teal); color:var(--ink); }
   .plan.custom .plan-list li::before{ content:'●'; color:var(--teal); font-size:9px; }
 
+  /* ---------- SAMPLE WORK (PHONE MOCKUPS) ---------- */
+  .sample-grid{
+    display:grid; grid-template-columns:repeat(3, 1fr); gap:28px;
+  }
+  @media (max-width:900px){ .sample-grid{ grid-template-columns:1fr; max-width:340px; margin:0 auto; } }
+  .sample-item{ display:flex; flex-direction:column; align-items:center; gap:16px; }
+  .phone-frame{
+    width:100%; max-width:260px;
+    background:var(--ink-2); border:1px solid var(--line-2); border-radius:22px;
+    padding:10px; box-shadow:0 20px 45px rgba(0,0,0,0.35);
+  }
+  .phone-screen{ border-radius:14px; overflow:hidden; background:var(--ink); }
+  .ig-header{
+    display:flex; align-items:center; gap:8px; padding:10px 10px 8px;
+  }
+  .ig-avatar{
+    width:26px; height:26px; border-radius:50%;
+    background:linear-gradient(135deg, var(--teal), var(--amber));
+    flex-shrink:0;
+  }
+  .ig-handle{ font-size:11.5px; font-weight:700; color:var(--paper); }
+  .ig-photo{ width:100%; aspect-ratio:1/1; object-fit:cover; display:block; }
+  .ig-actions{
+    display:flex; gap:10px; padding:9px 10px 4px; font-size:15px; color:var(--paper);
+  }
+  .ig-caption{
+    padding:2px 10px 12px; font-size:10.5px; line-height:1.4; color:var(--muted);
+  }
+  .ig-caption b{ color:var(--paper); }
+  .sample-tag{
+    font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.05em;
+    color:var(--teal); background:var(--teal-dim); border:1px solid rgba(69,232,208,0.3);
+    padding:5px 12px; border-radius:100px;
+  }
+  .sample-caption-title{ font-family:'Space Grotesk', sans-serif; font-size:15px; font-weight:700; color:var(--paper); }
+
   /* ---------- CONTACT FORM ---------- */
   .contact-form{ max-width:640px; display:flex; flex-direction:column; gap:20px; }
   .form-row{ display:flex; flex-direction:column; gap:8px; }
@@ -831,6 +867,64 @@
         <p data-en="Projection mapping / digital visual content designed for your physical storefront or shop — backed by 14+ years of LED wall and real-time event tech experience. This is something a Canva-template AI marketing provider simply can't deliver.">Fizikai kirakatba vagy üzlettérbe tervezett projection mapping / digitális vizuál tartalom — 14+ év LED wall és real-time rendezvénytechnikai háttérrel. Ezt egy Canva-sablonokból dolgozó AI-marketing szolgáltató nem tudja megcsinálni.</p>
       </div>
       <a href="#kapcsolat" class="sig-cta" data-en="Request a consultation →">Egyeztetés kérése →</a>
+    </div>
+  </section>
+
+  <section id="mintamunkak">
+    <div class="sec-head">
+      <span class="sec-tag" data-en="Sample Work">Minta munkák</span>
+      <h2 class="display" data-en-html="This is what shows up<br>in your feed.">Ez landol majd<br>a feededben.</h2>
+      <p data-en="Illustrative examples of the exact post format you'd receive — not stock photography, the actual deliverable format.">Illusztratív minták arra, milyen formátumú posztot kapnál — nem stock fotó, hanem a tényleges szállítási forma.</p>
+    </div>
+
+    <div class="sample-grid">
+      <div class="sample-item">
+        <div class="phone-frame">
+          <div class="phone-screen">
+            <div class="ig-header">
+              <div class="ig-avatar"></div>
+              <span class="ig-handle">tavaszi_etterem</span>
+            </div>
+            <img class="ig-photo" src="https://images.pexels.com/photos/32809021/pexels-photo-32809021.jpeg?auto=compress&cs=tinysrgb&w=500" alt="">
+            <div class="ig-actions">♥ 💬 ↗</div>
+            <div class="ig-caption"><b>Ma esti ajánlatunk</b> — friss alapanyagokból, minden nap másképp. 🍽️ Asztalfoglalás a linkben.</div>
+          </div>
+        </div>
+        <span class="sample-tag" data-en="REEL · RESTAURANT">REEL · ÉTTEREM</span>
+        <span class="sample-caption-title" data-en="Daily special post">Napi ajánlat poszt</span>
+      </div>
+
+      <div class="sample-item">
+        <div class="phone-frame">
+          <div class="phone-screen">
+            <div class="ig-header">
+              <div class="ig-avatar"></div>
+              <span class="ig-handle">kavezo_sarok</span>
+            </div>
+            <img class="ig-photo" src="https://images.pexels.com/photos/34353697/pexels-photo-34353697.jpeg?auto=compress&cs=tinysrgb&w=500" alt="">
+            <div class="ig-actions">♥ 💬 ↗</div>
+            <div class="ig-caption"><b>Új hangulat, ugyanaz a kávé.</b> Nézz be hozzánk reggel 7-től! ☕</div>
+          </div>
+        </div>
+        <span class="sample-tag" data-en="POST · CAFÉ">POST · KÁVÉZÓ</span>
+        <span class="sample-caption-title" data-en="Ambience / interior post">Hangulat / belső tér poszt</span>
+      </div>
+
+      <div class="sample-item">
+        <div class="phone-frame">
+          <div class="phone-screen">
+            <div class="ig-header">
+              <div class="ig-avatar"></div>
+              <span class="ig-handle">stilus_butik</span>
+            </div>
+            <img class="ig-photo" src="https://images.pexels.com/photos/32549955/pexels-photo-32549955.jpeg?auto=compress&cs=tinysrgb&w=500" alt="">
+            <div class="ig-actions">♥ 💬 ↗</div>
+            <div class="ig-caption"><b>Új kollekció megérkezett.</b> Gyere el, próbáld fel személyesen! ✨</div>
+          </div>
+        </div>
+        <span class="sample-tag" data-en="STORY · RETAIL">STORY · BUTIK</span>
+        <span class="sample-caption-title" data-en="New arrival story">Új érkezés story</span>
+      </div>
     </div>
   </section>
 
