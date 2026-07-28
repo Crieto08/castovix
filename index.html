@@ -4,6 +4,29 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Castovix — AI tartalom-előfizetés helyi vállalkozásoknak</title>
+
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/favicon/favicon-512.png">
+<meta name="theme-color" content="#07080C">
+<meta name="description" content="Havi videó, kép és social media tartalom AI-val gyártva — a márkádra szabva, stúdiói minőségben. Nincs applikáció, nincs hosszú távú szerződés.">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Castovix">
+<meta property="og:url" content="https://crieto08.github.io/castovix/">
+<meta property="og:title" content="Castovix — AI tartalom-előfizetés helyi vállalkozásoknak">
+<meta property="og:description" content="Havi videó, kép és social media tartalom AI-val gyártva — a márkádra szabva, stúdiói minőségben.">
+<meta property="og:image" content="https://crieto08.github.io/castovix/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Castovix — AI tartalom-előfizetés helyi vállalkozásoknak">
+<meta name="twitter:description" content="Havi videó, kép és social media tartalom AI-val gyártva — a márkádra szabva, stúdiói minőségben.">
+<meta name="twitter:image" content="https://crieto08.github.io/castovix/assets/og-image.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
@@ -335,7 +358,7 @@
   @media (max-width:640px){ .map-stage{ aspect-ratio:4/5; } }
   .map-svg-wrap{ position:absolute; inset:0; width:100%; height:100%; }
   .worldmap-svg{ position:absolute; inset:0; width:100%; height:100%; }
-  .worldmap-svg-object{ position:absolute; inset:0; width:100%; height:100%; pointer-events:none; }
+  .worldmap-svg-object{ position:absolute; inset:0; width:100%; height:100%; pointer-events:none; object-fit:cover; }
   .wm-country{
     fill:rgba(69,232,208,0.06);
     stroke:var(--teal);
@@ -755,7 +778,7 @@
     <div style="margin-top:56px;">
       <div class="cast-stage" style="padding:0;">
         <div class="map-stage" id="mapStage">
-          <object type="image/svg+xml" data="assets/world-map.svg" class="worldmap-svg-object" aria-hidden="true"></object>
+          <img src="assets/world-map.svg" class="worldmap-svg-object" alt="" aria-hidden="true">
           <div class="map-card" id="mapCard0"></div>
           <div class="map-card" id="mapCard1"></div>
           <div class="map-card" id="mapCard2"></div>
@@ -814,7 +837,7 @@
   <section id="portfolio">
     <div class="sec-head">
       <span class="sec-tag" data-en="Portfolio">Referenciák</span>
-      <h2 class="display" data-en-html="14+ years behind<br>the camera, not in front of it.">14+ év a kamera<br>mögött, nem előtte.</h2>
+      <h2 class="display" data-en-html="14+ years behind<br>the camera.">14+ év a kamera<br>mögött.</h2>
       <p data-en="Behind Castovix isn't an anonymous AI engine — it's the visual background of 25+ video games, immersive exhibitions, and major events.">A Castovix mögött nem egy anonim AI-motor áll — hanem 25+ videójáték, immerzív kiállítás és nagyrendezvény vizuál háttere.</p>
     </div>
 
